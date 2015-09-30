@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body ng-app="boatway">
+
+<ion-nav-view></ion-nav-view>
+
+<!-- Google Maps -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!-- ionic/angularjs js -->
+<script src="lib/ionic/js/ionic.bundle.js"></script>
+
+<!-- cordova script (this will be a 404 during development) -->
+<script src="lib/ngCordova/ng-cordova.min.js"></script>
+<script src="cordova.js"></script>
+
+<!-- Useful libs -->
+<script src="lib/geodesy/latlon-spherical.js"></script>
+
+<!-- your app's js -->
+<script src="js/app.js"></script>
+<script src="js/controllers/mapViewCtrl.js"></script>
+<script src="js/controllers/listViewCtrl.js"></script>
+<script src="js/controllers/profileCtrl.js"></script>
+<script src="js/controllers/legalCtrl.js"></script>
+<script src="js/controllers/resourcesCtrl.js"></script>
+<script src="js/controllers/destinationCtrl.js"></script>
+<script src="js/controllers/boatDetailsCtrl.js"></script>
+<script src="js/controllers/aboutCtrl.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/services/MapStyle.js"></script>
+<script src="js/services/UserProfile.js"></script>
+<script src="js/services/Ships.js"></script>
+<script src="js/services.js"></script>
+</body>
+</html>

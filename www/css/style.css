@@ -1,0 +1,91 @@
+/* Empty. Add your own CSS if you like */
+.scroll {
+    height: 100%;
+}
+
+#map_canvas {
+    width:100%;
+    height:100%;
+}
+
+#center {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    top: 10px;
+    right: 10px;
+    color: #F00;
+    font-size:36px;
+    text-align: center;
+}
+
+#refresh {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    top: 10px;
+    right: 46px;
+    color: #F00;
+    font-size:36px;
+    text-align: center;
+}
+
+#speed, #heading {
+    width: 50%;
+    color: #063c6b;
+    font-weight: bold;
+    font-size: 22px;
+    display:block;
+    position:fixed;
+    bottom: 0;
+    z-index:10000;
+    padding: 10px;
+    background: #FFFFFF;
+    border-top: 1px solid #063c6b;
+    height: 43px;
+}
+
+#speed {
+    left: 0;
+}
+
+#heading {
+    right: 0;
+    text-align: right
+}
+
+.shipname {
+    text-transform: capitalize;
+}
+
+.item-divider {
+    text-align:center;
+}
+
+.legal {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background: url('../img/bluebg.png') fixed center;
+    color: #fff;
+    text-align: center;
+}
+
+.legal h2 {
+    color: #fff;
+}
+
+.legal ul li {
+    list-style-type: circle;
+}
+
+.legal .list-inset {
+    background: none;
+}
+
+.dark-blue {
+    background: #063c6b !important;
+}

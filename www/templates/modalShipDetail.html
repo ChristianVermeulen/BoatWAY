@@ -1,0 +1,44 @@
+<div class="modal">
+    <ion-header-bar>
+        <h1 class="title">Schip Details</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list card">
+
+            <div class="item item-icon-left">
+                <i class="icon ion-pricetag"></i>
+                {{shipDetails.name}}
+            </div>
+
+            <div class="item item-icon-left">
+                <i class="icon ion-speedometer"></i>
+                {{shipDetails.speedOverGround|number}} km/h
+            </div>
+
+            <div class="item item-icon-left">
+                <i class="icon ion-android-expand"></i>
+                Breedte: {{shipDetails.width|number}}m<br/>
+                Lengte: {{shipDetails.length|number}}m<br/>
+                Diepgang: {{shipDetails.maxDraught|number}}m
+            </div>
+
+            <div class="item item-icon-left" ng-if="shipDetails.destination">
+                <i class="icon ion-earth"></i>
+                {{shipDetails.destination|lowercase}}
+            </div>
+
+            <div class="item item-icon-left">
+                <i class="icon ion-android-wifi"></i>
+                {{shipDetails.distance|number}} meter
+            </div>
+
+            <div class="item item-icon-left" ng-if="shipDetails.tti">
+                <i class="icon ion-clock"></i>
+                {{shipDetails.tti|number}} minuten tot passeren
+            </div>
+
+        </div>
+
+        <button class="button button-full button-positive" ng-click="closeModal()">Sluiten</button>
+    </ion-content>
+</div>

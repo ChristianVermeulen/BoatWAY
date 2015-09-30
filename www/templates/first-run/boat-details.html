@@ -1,0 +1,34 @@
+<ion-view view-title="Boat Details">
+    <ion-content>
+        <div class="legal padding">
+            <br/>
+            <h2>Jouw Boot</h2>
+            <br/>
+            <p>
+                Vul hier de gegevens van jouw boot in.
+            </p>
+            <br/>
+            <div class="list list-inset">
+
+                <label class="item item-input">
+                    <i class="icon ion-android-boat placeholder-icon"></i>
+                    <input type="text" placeholder="Naam van je boot" ng-change="update();" ng-model="myShip.name">
+                </label>
+                <br/>
+                <label class="item item-input">
+                    <i class="icon ion-android-expand placeholder-icon"></i>
+                    <input type="number" placeholder="Lengte in meter" ng-change="update();" ng-model="myShip.positionOfTransponder.distanceToBow">
+                </label>
+                <br/>
+                <label class="item item-input">
+                    <i class="icon ion-android-expand placeholder-icon"></i>
+                    <input type="number" placeholder="Breedte in meter" ng-change="update();" ng-model="myShip.positionOfTransponder.distanceToStarboard">
+                </label>
+            </div>
+            <br/>
+            <p>
+                <a href="#/app/map-view" class="button icon-right ion-chevron-right button-outline button-light">Opslaan</a>
+            </p>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,36 @@
+<ion-view view-title="Lijstweergave">
+    <ion-content class="has-footer">
+        <ul class="list">
+            <li style="text-align:center;padding:20px;" ng-show="shipsFromFront.length == 0">De komende 20 minuten passeren er geen schepen </li>
+            <li class="item item-text-wrap" ng-repeat="ship in shipsFromFront | orderBy:'-tti'"
+                ng-click="shipDetail({{ship.mmsi}});" style="padding:0;">
+                <div class="row">
+                    <div class="col col-33 shipname"><p>{{ship.name|lowercase}}</p></div>
+                    <div class="col" style="text-align:right;"><p>{{ship.distance|number}}m</p></div>
+                    <div class="col" style="text-align:right;"><p>{{ship.speedOverGround|number}}km/h</p></div>
+                    <div class="col" style="text-align:right;"><p>{{ship.tti}} Min.</p></div>
+                </div>
+            </li>
+            <div class="item item-divider">
+                <p><i class="icon ion-arrow-up-a"></i>&nbsp;&nbsp;&nbsp;&nbsp;Schepen voor je&nbsp;&nbsp;&nbsp;&nbsp;<i
+                        class="icon ion-arrow-up-a"></i></p>
+            </div>
+            <div class="item item-divider">
+                <p><i class="icon ion-arrow-down-a"></i>&nbsp;&nbsp;Schepen achter je&nbsp;&nbsp;<i
+                        class="icon ion-arrow-down-a"></i></p>
+            </div>
+            <li class="item item-text-wrap" ng-repeat="ship in shipsFromBehind | orderBy:'tti'"
+                ng-click="shipDetail({{ship.mmsi}});" style="padding:0;">
+                <div class="row">
+                    <div class="col col-33 shipname"><p>{{ship.name|lowercase}}</p></div>
+                    <div class="col" style="text-align:right;"><p>{{ship.distance|number}}m</p></div>
+                    <div class="col" style="text-align:right;"><p>{{ship.speedOverGround|number}}km/h</p></div>
+                    <div class="col" style="text-align:right;"><p>{{ship.tti}} Min.</p></div>
+                </div>
+            </li>
+            <li style="text-align:center;padding:20px;" ng-show="shipsFromBehind.length == 0">De komende 20 minuten passeren er geen schepen </li>
+        </ul>
+    </ion-content>
+    <span id="speed">{{userLocation.speedOverGround|number}} km/h</span>
+    <span id="heading">{{userLocation.courseOverGround}}&deg;</span>
+</ion-view>

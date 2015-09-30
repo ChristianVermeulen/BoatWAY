@@ -1,0 +1,23 @@
+<ion-view view-title="Destination">
+    <ion-content>
+        <div class="legal padding">
+            <br/>
+            <h2>Bestemming</h2>
+            <br/>
+            <p>
+                Waar vaar je vandaag naartoe?
+            </p>
+            <br/>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-map placeholder-icon"></i>
+                    <input type="text" placeholder="Bestemming" ng-model="myShip.destination" ng-change="update();">
+                </label>
+            </div>
+            <br/>
+            <p>
+                <a href="{{nextPage}}" class="button icon-right ion-chevron-right button-outline button-light">Opslaan</a>
+            </p>
+        </div>
+    </ion-content>
+</ion-view>

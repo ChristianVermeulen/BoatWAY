@@ -1,0 +1,46 @@
+<ion-view view-title="Profiel">
+  <ion-content>
+    <div class="list">
+        <div class="padding">
+            <p>
+                Vul hier eerst de gegeven van je boot in.<br/>
+                Daarna kun je via het menu (linksboven) naar de kaart of lijstweergave.
+            </p>
+        </div>
+        <div class="item item-divider">
+            <p>Boot Gegevens</p>
+        </div>
+        <label class="item item-input">
+            <span class="input-label">Bootnaam</span>
+            <input type="text" placeholder="Bijv. Hugo" ng-model="myShip.name" ng-change="update();">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Bestemming</span>
+            <input type="text" placeholder="Bijv. Rotterdam" ng-model="myShip.destination" ng-change="update();">
+        </label>
+        <div class="item item-divider">
+            <p>Boot Afmetingen (meter)</p>
+        </div>
+        <label class="item item-input">
+            <span class="input-label">Lengte</span>
+            <input type="number" placeholder="0" ng-model="myShip.positionOfTransponder.distanceToBow" ng-change="update();">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Breedte</span>
+            <input type="number" placeholder="0" ng-model="myShip.positionOfTransponder.distanceToStarboard" ng-change="update();">
+        </label>
+        <div class="item item-divider">
+            <p>Opties</p>
+        </div>
+        <div class="item item-toggle">
+            Schepen als pijl weergeven
+            <label class="toggle toggle-positive">
+                <input type="checkbox" ng-model="myShip.markersAsArrow" ng-change="update();">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

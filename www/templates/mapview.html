@@ -1,0 +1,9 @@
+<ion-view view-title="Kaartweergave">
+  <ion-content class="has-footer">
+    <div id="map_canvas" data-tap-disabled="true"></div>
+    <span id="center" ng-click="centerOnMe();" class="icon ion-android-locate"></span>
+    <span id="refresh" ng-click="updateShips(true);" class="icon ion-android-refresh"></span>
+  </ion-content>
+  <span id="speed">{{ship.speedOverGround|number}} km/h</span>
+  <span id="heading">{{ship.courseOverGround}}&deg;</span>
+</ion-view>
