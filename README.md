@@ -1,8 +1,14 @@
 # Graduation Christian Vermeulen #
 
-More information about the app can be found on [www.boatway.nl](http://boatway.nl).
+This is the official home of the BoatWAY app, which is open source and owned by the public domain.
 
-More information about the research can be fount on [afstuderen.christianvermeulen.net](http://afstuderen.christianvermeulen.net) (NL).
+If you use this app or code from this app in any way, please be so kind to keep my work credited :-).
+
+Happy Coding!
+
+- More information about the app can be found on [www.boatway.nl](http://boatway.nl).
+- More information about the research can be found on [afstuderen.christianvermeulen.net](http://afstuderen.christianvermeulen.net) (NL).
+- [Corresponding thesis](http://fliphtml5.com/ftxo/eqek)
 
 # The MIT License (MIT) #
 
